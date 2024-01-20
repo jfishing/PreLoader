@@ -127,7 +127,7 @@ void init() {
 
 
 [[maybe_unused]] BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
-    if (ul_reason_for_call != DLL_PROCESS_ATTACH) return TRUE;
+    /*if (ul_reason_for_call != DLL_PROCESS_ATTACH) return TRUE;
 
     SetConsoleCP(CP_UTF8);
     SetConsoleOutputCP(CP_UTF8);
@@ -144,6 +144,6 @@ void init() {
     SetCurrentDirectoryW(cwd.c_str());
     SetErrorMode(SEM_FAILCRITICALERRORS | SEM_NOGPFAULTERRORBOX | SEM_NOALIGNMENTFAULTEXCEPT);
 
-    pl::init();
+    pl::init();*/
     return TRUE;
 }
